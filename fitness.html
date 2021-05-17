@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Chapter</title>
+</head>
+<style>
+body{
+        margin: 0px;
+        background-image: url(bg.jpg);
+    }
+    .left{
+        /* border:2px solid red; */
+        display: inline-block;
+        border-radius: 4px;
+        width :139px;
+     position:absolute;
+        
+        top:11px; 
+        
+        padding: 0px 30px;
+        
+
+    }
+    .left img{
+        width:420px;
+    }
+    .middle{
+        display: block ;
+        width:50%;  
+        margin:auto;
+        /* border:2px solid red; */
+    
+        border-radius: 4px;
+        
+        
+         align-items: center;
+        justify-content: center;
+        left:12px;
+        
+        
+        
+        
+        
+        
+
+    }
+    .left img{
+        width: 90%;
+        text-align: center;
+        filter: invert(100%);
+    }
+    .right{
+        /* border:2px solid red; */
+        border-radius: 4px;
+        float:right;
+        position:absolute;
+        right:0px;
+        top:0px;
+
+        
+
+    }
+    .navbar{
+        display:inline-block;
+        /* text-align: center; */
+    }
+    .navbar li{
+        display: inline-block;
+        text-align: center;
+        
+    }
+    .navbar li a{
+        /* background-color: coral; */
+        color:green;
+        text-decoration: none;
+        padding: 20px 20px;
+        text-align: center;
+    }
+    .navbar li a:hover{
+color: greenyellow; 
+
+    }
+    .btn{
+        color: black;
+        background-color: indianred;
+    }
+    .btn:hover{
+        color: grey;
+    }
+    .cont{
+        /* border: 2px solid blue; */
+    margin: 148px 10px;
+    padding: 110px 20px;
+    width: 44%;
+}
+.form-gym input
+{
+    /* border:2px solid red; */
+    background-color: black;
+    border-radius: 11px;
+    margin: 35px;
+    padding: 10px  10px;
+    width:80%;
+    text-align: center;
+    color: violet;
+}
+.cont h1{
+    text-align: center;
+}
+.cont button{
+    
+    /* border:2px solid red; */
+    background-color: black;
+    margin: 35px;
+    padding: 10px 10px;
+    color:white;
+    width:85%;
+    text-align: center;
+    border-radius: 11px;
+    cursor: pointer;
+}
+.cont button:hover{
+    background-color: grey;
+}
+    
+</style>
+
+
+<body>
+    <div class="container">
+    <div class="left" id="first">
+        <img src="logo.jpg">
+        <div>fitness done right</div>
+    </div>
+    <div class="middle" id="second">
+        <div class="navbar" >
+            <ul>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Fitness test</a></li>
+                <li><a href="#">Queries</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="right" id="third">
+        <button class="btn">Search</button>
+        <button class="btn">Email Us</button>
+    </div>
+</div>
+<div class="cont">
+    <h1>Enter Your Details</h1>
+        <form action="backend.php">
+            <div class="form-gym">
+            <input type="text" class="gss" placeholder="Enter your Name">
+            </div>
+            <div class="form-gym">
+                <input type="text" class="gss" placeholder="Enter your Age">
+                </div>
+                <div class="form-gym">
+                    <input type="text" class="gss" placeholder="Enter your City">
+                    </div>
+                    <div class="form-gym">
+                        <input type="text" class="gss" placeholder="Enter your Locality">
+                        </div>
+                        <button >Submit</button>
+        </form>
+    </div>
+</div>
+
+    
+</body>
+</html>
